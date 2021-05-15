@@ -1,0 +1,10 @@
+#CS{
+ background-image: url("gargantua.txt");
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: 100%;
+}
+
+#CS-text{
+  background-color: rgba(105, 105, 105, 0.3)
+}
