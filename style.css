@@ -1,3 +1,7 @@
+html, body{
+  background-color: darkslategray;
+}
+
 #CS{
  background-image: url("Assets/Images/banner-background.jpg");
  background-repeat: no-repeat;
