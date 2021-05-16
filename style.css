@@ -1,10 +1,22 @@
 #CS{
- background-image: url("gargantua.txt");
- background-attachment: fixed;
+ background-image: url("Assets/Images/banner-background.jpg");
  background-repeat: no-repeat;
  background-size: 100%;
+ width: auto;
+ max-width: 100%;
+
 }
 
 #CS-text{
-  background-color: rgba(105, 105, 105, 0.3)
+  background-color: rgba(105, 105, 105, 0.3);
+  width: 750px;
+  height: 200px;
+}
+
+#CS-logo{
+  padding-left: 180px;
+}
+
+.hidden{
+  display: none;
 }
