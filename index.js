@@ -51,6 +51,14 @@ $(function () {
     });
 });
 
+// Asteroid Field button
+$(function () {
+    $("#Play2").click(function () {
+        $(".games-list").addClass("hidden");
+        $("#Dogecoin").removeClass("hidden");
+    });
+});
+
 // Back button
 $(function () {
     $(".back").click(function () {
