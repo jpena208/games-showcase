@@ -42,6 +42,28 @@
         
 //     });
 // });
+function displayWindowSize(){
+    // Get width and height of the window excluding scrollbars
+    var w = document.documentElement.clientWidth;
+    var h = document.documentElement.clientHeight;
+    
+    // Display result inside a div element
+    if(w <= 1200){
+        $(".item").removeClass("col-sm-3");
+        $(".item").addClass("spacerthing d-flex justify-content-center");
+    } else {
+        $(".item").addClass("col-sm-3");
+        $(".item").removeClass("")
+    }
+
+    // document.getElementById("result").innerHTML = "Width: " + w + ", " + "Height: " + h;
+}
+    
+// Attaching the event listener function to window's resize event
+window.addEventListener("resize", displayWindowSize);
+
+// Calling the function for the first time
+displayWindowSize();
 
 // Asteroid Field button
 $(function () {
