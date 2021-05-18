@@ -50,7 +50,7 @@ function displayWindowSize(){
     // Display result inside a div element
     if(w <= 1200){
         $(".item").removeClass("col-sm-3");
-        $(".item").addClass("spacerthing d-flex justify-content-center");
+        $(".item").addClass("spacerthing");
     } else {
         $(".item").addClass("col-sm-3");
         $(".item").removeClass("")
