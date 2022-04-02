@@ -39,6 +39,18 @@ body {
   color: #fffafc;
 }
 
+@media (max-width: 576px) {
+  /* Small screens, reduce navbar content size */
+  .navbar-toggler,
+  .name {
+    transform: scale(0.8);
+  }
+
+  .navbar {
+    padding-top: 0;
+  }
+}
+
 /* Icons */
 i:hover {
   font-size: 1.7rem;
@@ -61,6 +73,10 @@ i:hover {
 }
 
 /* Hamburger Button */
+.navbar-toggler {
+  align-items: baseline;
+}
+
 .visuallyHidden {
   position: absolute;
   overflow: hidden;
@@ -107,7 +123,6 @@ i:hover {
   bottom: 0;
 }
 
-/* HAMBURGER 1 */
 .checkbox1:checked + label > .hamburger1 > .bar1 {
   transform: rotate(39deg);
   transform-origin: 5%;
@@ -135,13 +150,42 @@ i:hover {
   margin-left: 20px;
 }
 
+@media screen and (max-width: 576px) {
+  #fp-nav {
+    /* From extra small to small, keep close to center as possible */
+    right: 32%;
+  }
+
+  #fp-nav ul {
+    transform: scale(0.55);
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  #fp-nav {
+    /* From small to tablet , keep close to center as possible*/
+    right: 39%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1250px) {
+  #fp-nav {
+    /* From tablet to large , keep close to center as possible*/
+    right: 43%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fp-nav ul {
+    transform: scale(0.7);
+  }
+}
+
 /* Screens smaller than large */
 @media screen and (max-width: 1250px) {
   /* Aligns the div to bottom center */
   #fp-nav {
     top: auto;
     bottom: 0;
-    right: 45%;
     margin: 0;
   }
 
