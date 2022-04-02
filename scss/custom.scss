@@ -1,0 +1,47 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$primary: #851e3e;
+$secondary: #651e3e;
+$success: #1f976c;
+$info: #e19941;
+$warning: #cecd21;
+$danger: #d74310;
+$light: #451e3e;
+$dark: #051e3e;
+$white: #fffafc;
+
+$gradient: linear-gradient(180deg, $dark, $light, $secondary, $primary);
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+//    Include function stuff like maps here
+// $theme-colors: map-merge($theme-colors, $custom-theme-colors); // You should already have this, so no need to copy this part.
+
+// $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+// $utilities-colors: map-merge(
+//   $theme-colors-rgb,
+//   (
+//     "black": to-rgb($black),
+//     "white": to-rgb($white),
+//     "body":  to-rgb($body-color)
+//   )
+// );
+
+// $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+// $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+
+// 4. Include any optional Bootstrap components as you like
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+
+// 5. Add additional custom code here
+
+@import "../node_modules/bootstrap/scss/bootstrap";

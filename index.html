@@ -1,118 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Joey's Game Showcase</title>
-    <link rel="shortcut icon" href="Assets/Images/favicon.ico" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- extra light, light, regular, medium, bold -->
+
+    <!-- Fullpage js css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css"
+    />
+    <!-- Custom bootstrap scss and custom css styles -->
+    <link rel="stylesheet" href="/css/custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title>Games Showcase | Unity Games by Jose Pena</title>
   </head>
-  <body>
 
+  <body class="bg-gradient">
     <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <h1 class="navbar-brand">Hey I'm Joey!</h1>
+    <nav
+      id="navbar"
+      class="fixed-top navbar navbar-expand-md navbar-dark bg-transparent py-3"
+      role="navigation"
+    >
+      <div id="navContainer" class="container">
+        <!-- Navbar brand -->
+        <a id="name" class="navbar-brand name" href="#" style="font-weight: 300"
+          >Jose Peña</a
+        >
+
+        <!-- Icons -->
+        <div id="icons" class="h6 icons ms-auto mx-3">
+          <a href="https://twitter.com/jpena208?t=lQdnHc83PlldHnfVkxyFYQ&s=09"
+            ><i class="bi bi-twitter text-white mx-2"></i
+          ></a>
+          <a href="https://www.facebook.com/profile.php?id=100078029905467"
+            ><i class="bi bi-facebook text-white mx-2"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/jose-peña-3a3b16234"
+            ><i class="bi bi-linkedin text-white mx-2"></i
+          ></a>
         </div>
-        <img id="CS-logo" src="Assets/Images/cs-logo.png" height="50px">
-        <div class="nav navbar-nav">
-          <h3 class="navbar-brand">Thank you for playing my games!</h3>
+
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <input
+            type="checkbox"
+            id="checkbox1"
+            class="checkbox1 visuallyHidden"
+          />
+          <label for="checkbox1">
+            <div class="hamburger hamburger1">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
+              <span class="bar bar4"></span>
+            </div>
+          </label>
+        </button>
+
+        <!-- Collapsible content -->
+        <div id="navbarNav" class="collapse navbar-collapse my-2">
+          <!-- 
+               These links have anchors that are linked to the sections of the page.
+               Fullpage js uses them to know which menu item is active
+           -->
+          <!-- Nav Menu Links -->
+          <ul id="nav-ul" class="navbar-nav ms-auto">
+            <li class="active nav-item" data-menuanchor="home">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item" data-menuanchor="game1">
+              <a class="nav-link" href="#game1">Game 1</a>
+            </li>
+            <li class="nav-item" data-menuanchor="game2">
+              <a class="nav-link" href="#game2">Game 2</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Header banner thingy -->
-    <section id="CS" class="py-5 col-lg-6 col-md-8 text-center container-fluid">
-      <div class="row py-lg-5">
-        <div id="CS-text" class="rounded col-lg-6 col-md-8 mx-auto text-white">
-          <h1 class="fw-light"> <strong>Made With Unity!</strong></h1>
-          <p class="lead text-wrap">Each of these games took multiple weeks to make. They use the "C#" programming language. Want to try to make your first game? Watch this tutorial: </p>
-          <a href="https://youtu.be/pCBqgREiSUE">How to make Your First Game TODAY! - (Unity 3D)</a>
-        </div>
-      </div>
-    </section>
-
-    <div id="result"></div>
-
-    <!-- Row of games -->
-    <div class="games-list container-fluid pt-5 pb-3">
-      <div class="text-white text-center fs-6">
-        Here's my list of games, enjoy!
-      </div>
-      
-      <div class="container pt-3 pb-5 ">
-        <div class="row">
-          <div class="item col-sm-3 d-flex justify-content-center">
-            <div class="card shadow-sm">
-              <img src="Assets/Images/AsteroidField.png" height="250">
-              <div class="card-body">
-                <h3 class="card-title"> Asteroid Field </h3>
-                <p class="text-wrap">Avoid the rocks. Hit left shift boost. Collect popup items to slow down asteroids. Controls and difficulty can be changed.</p>
-                <a href="https://youtu.be/Jh3fX6-Ytf4">Music by E.Hartmann</a> </br> </br>
-              </div>
-              <div class="play d-flex justify-content-center"> <button id="Play1" type="button" class="btn btn-primary">Play</button></div>
-            </div>
-          </div>
-
-          <div class="item col-sm-3 d-flex justify-content-center">
-            <div class="card shadow-sm">
-              <img src="Assets/Images/dogecoin.jpg" height="250">
-              <div class="card-body">
-                <h3 class="card-title"> Dogecoin to the moon! </h3>
-                <p class="text-wrap">Climb the platforms, collect doge coins, and gather dip to rocket to the moon! Do not fall! Change controls and difficulty in settings.</p>
-              </div>
-              <div class="play d-flex justify-content-center"> <button id="Play2" type="button" class="btn btn-primary">Play</button></div>
-            </div>
-          </div>
-
-          <div class="item col-sm-3 d-flex justify-content-center">
-            <div class="card shadow-sm">
-              <img src="Assets/Images/coming-soon.jpg" height="250">
-              <div class="card-body">
-                <h3 class="card-title"> Coming Soon! </h3>
-                <p class="text-wrap">I have not added in my next game yet! But don't worry, it is being worked on and will be ready soon! Thank you for your patience.</p>
-              </div>
-              <div class="play d-flex justify-content-center"> <button id="Play2" type="button" class="btn btn-primary">Play</button></div>
-            </div>
-          </div>
-
-          <div class="item col-sm-3 d-flex justify-content-center">
-            <div class="card shadow-sm">
-              <img src="Assets/Images/coming-soon.jpg" height="250">
-              <div class="card-body">
-                <h3 class="card-title"> Coming Soon! </h3>
-                <p class="text-wrap">I have not added in my next game yet! But don't worry, it is being worked on and will be ready soon! Thank you for your patience.</p>
-              </div>
-              <div class="play d-flex justify-content-center"> <button id="Play2" type="button" class="btn btn-primary">Play</button></div>
-            </div>
-          </div>
-        </div>
+    <!-- Full page wrapper -->
+    <div id="fullpage">
+      <!-- Home -->
+      <div class="section active text-white" data-anchor="home">
+        <h1 class="text-center">Games Showcase</h1>
+        <p class="text-center">This is a showcase of my Unity games.</p>
       </div>
 
-      </br> </br> </br> 
+      <!-- Game 1 -->
+      <div class="section text-white" data-anchor="game1">
+        <h1 class="text-center">Game 1</h1>
+        <p class="text-center">This is a game that I made using Unity.</p>
+      </div>
+
+      <!-- Game 2 -->
+      <div class="section text-white" data-anchor="game2">
+        <h1 class="text-center">Game 2</h1>
+        <p class="text-center">This is a game that I made using Unity.</p>
+      </div>
     </div>
 
-    <!-- Asteroid Field game -->
-    <div id="AsteroidField" class="hidden game container-fluid pt-5 pb-3">
-      <div class="d-flex justify-content-center"> <button type="button" class="back btn btn-primary">Back</button></div> </br>
-      <div class="d-flex justify-content-center"> <iframe src="https://i.simmer.io/@JPena208/asteroidfield" style="width:1280px;height:720px;border:0"></iframe> </div>
-      </br> </br> </br> <br>
-    </div>
+    <!-- Boostrap bundle  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- Dogecoin game -->
-    <div id="Dogecoin" class="hidden game container-fluid pt-5 pb-3">
-      <div class="d-flex justify-content-center"> <button type="button" class="back btn btn-primary">Back</button></div> </br>
-      <div class="d-flex justify-content-center"> <iframe src="https://i.simmer.io/@JPena208/dogecoin-to-the-moon" style="width:360px;height:740px;border:0"></iframe> </div>
-      </br> </br> </br> <br>
-    </div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="index.js"> </script>
+    <!-- Custom JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- Full page js -->
+    <script type="text/javascript" src="js/fullPage.js"></script>
   </body>
 </html>

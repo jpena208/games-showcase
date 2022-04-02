@@ -1,0 +1,179 @@
+body,
+section::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-attachment: fixed;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+/* Navbar */
+.navbar > .container {
+  align-items: baseline;
+}
+
+.navbar-collapse {
+  /* Remove flex grow for icons to be aligned right */
+  flex-grow: 0;
+}
+
+@media (max-width: 320px) {
+  /* Shrink name and menu button*/
+  .name,
+  .navbar-toggler {
+    font-size: 1em;
+    position: relative;
+  }
+}
+
+#nav-ul .active a {
+  /* Scrollspy hack without bootstrap, using fullpage js
+     Fullpage js adds active class because of anchors */
+  color: #fffafc;
+}
+
+/* Icons */
+i:hover {
+  font-size: 1.7rem;
+  transition: ease-in-out 0.2s;
+}
+
+@media (max-width: 576px) {
+  /* Smaller hover size on small screens*/
+  i:hover {
+    font-size: 1.2rem;
+    transition: ease-in-out 0.2s;
+  }
+}
+
+@media (min-width: 576px) {
+  /* On small-medium screens and up, Icons are h4 size */
+  .icons {
+    font-size: 1.5rem;
+  }
+}
+
+/* Hamburger Button */
+.visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.hamburger {
+  margin: 0 auto;
+  width: 40px;
+  height: 32px;
+  position: relative;
+}
+
+.hamburger .bar {
+  padding: 0;
+  width: 35px;
+  height: 2.5px;
+  background-color: white;
+  display: block;
+  border-radius: 3px;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+}
+
+.bar1 {
+  top: 10px;
+}
+
+.bar2 {
+  top: 20px;
+}
+
+.bar3 {
+  top: 20px;
+  left: 0;
+}
+
+.bar4 {
+  bottom: 0;
+}
+
+/* HAMBURGER 1 */
+.checkbox1:checked + label > .hamburger1 > .bar1 {
+  transform: rotate(39deg);
+  transform-origin: 5%;
+  width: 36px;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+  transform: translateX(-20px);
+  background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+  transform: translateX(20px);
+  background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+  transform-origin: 5%;
+  transform: rotate(-39deg);
+  width: 36px;
+}
+
+/* Full Page JS Customization */
+#fp-nav ul {
+  margin-left: 20px;
+}
+
+/* Screens smaller than large */
+@media screen and (max-width: 1250px) {
+  /* Aligns the div to bottom center */
+  #fp-nav {
+    top: auto;
+    bottom: 0;
+    right: 45%;
+    margin: 0;
+  }
+
+  /* Aligns fb-nav in a row */
+  #fp-nav ul {
+    display: flex;
+    align-items: end;
+  }
+
+  /* Rotates fb-nav */
+  #fp-nav ul li {
+    transform: rotate(-90deg);
+  }
+}
+
+#fp-nav ul li {
+  height: 3px;
+  margin: 0 15px 40px;
+}
+
+#fp-nav ul li .active {
+  width: 40px;
+}
+
+#fp-nav ul li a {
+  width: 24px;
+  height: 100%;
+  background: #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#fp-nav ul li a span {
+  display: none;
+}
