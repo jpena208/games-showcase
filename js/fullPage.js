@@ -20,7 +20,7 @@ var myFullpage = new fullpage("#fullpage", {
   easing: "easeInOutCubic",
   easingcss3: "ease",
   loopBottom: true,
-  loopTop: true,
+  loopTop: false,
   loopHorizontal: true,
   continuousVertical: false,
   continuousHorizontal: false,

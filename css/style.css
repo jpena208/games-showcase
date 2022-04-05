@@ -221,3 +221,48 @@ i:hover {
 #fp-nav ul li a span {
   display: none;
 }
+
+/* General full page content */
+/* .section-container{
+  padding: 3rem;
+}
+
+Between medium and large screens
+@media screen and (min-width: 769px) and (max-width: 1250px) {
+  .section-container{
+    padding: 0;
+  }
+} */
+
+.title-text{
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .title-text {
+    font-size: 2.5rem;
+  }
+}
+
+.title-lead{
+  font-size: 1.15rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .title-lead {
+    font-size: .98rem;
+  }
+}
+
+/* Home */
+
+/* Game 1 */
+
+/* Game 2 */
