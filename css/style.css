@@ -234,7 +234,7 @@ Between medium and large screens
   }
 } */
 
-.title-text{
+.title-text {
   font-size: 3.5rem;
   font-weight: bold;
   color: #fff;
@@ -248,7 +248,7 @@ Between medium and large screens
   }
 }
 
-.title-lead{
+.title-lead {
   font-size: 1.15rem;
   color: #fff;
   text-align: center;
@@ -257,10 +257,15 @@ Between medium and large screens
 
 @media (max-width: 768px) {
   .title-lead {
-    font-size: .98rem;
+    font-size: 0.75rem;
   }
 }
 
+@media (max-width: 768px) {
+  .section-img {
+    width: 50%;
+  }
+}
 /* Home */
 
 /* Game 1 */
