@@ -294,6 +294,12 @@ i:hover {
   width: 35%;
   height: 96%;
 }
+@media (max-width: 576px) {
+  .doge-img {
+    width: 35%;
+    height: 70%;
+  }
+}
 
 /* game1.html */
 .game1-body {
