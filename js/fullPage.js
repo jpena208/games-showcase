@@ -1,6 +1,6 @@
 var myFullpage = new fullpage("#fullpage", {
   //Navigation
-  anchors: ["home", "game1", "game2"],
+  anchors: ["home", "game1", "game2", "game3", "game4"],
   menu: "#nav-ul",
   lockAnchors: false,
   navigation: true,

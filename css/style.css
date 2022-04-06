@@ -15,6 +15,16 @@ body {
 }
 
 /* Navbar */
+.navbar-nav {
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 2.5vw;
+  }
+}
+
 .navbar > .container {
   align-items: baseline;
 }
@@ -55,6 +65,13 @@ body {
 i:hover {
   font-size: 1.7rem;
   transition: ease-in-out 0.2s;
+}
+
+@media (max-width: 320px) {
+  #icons {
+    margin-left: auto;
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -312,5 +329,19 @@ i:hover {
 .game2-body {
   /* Give gradient */
   background: linear-gradient(to bottom, #451e3e 0%, #851e3e 100%);
+  background-attachment: fixed;
+}
+
+/* game3.html */
+.game3-body {
+  /* Give gradient */
+  background: linear-gradient(to bottom, #851e3e 0%, #051e3e 100%);
+  background-attachment: fixed;
+}
+
+/* game4.html */
+.game4-body {
+  /* Give gradient */
+  background: linear-gradient(to bottom, #651e3e 0%, #451e3e 100%);
   background-attachment: fixed;
 }
