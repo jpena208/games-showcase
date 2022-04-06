@@ -223,17 +223,6 @@ i:hover {
 }
 
 /* General full page content */
-/* .section-container{
-  padding: 3rem;
-}
-
-Between medium and large screens
-@media screen and (min-width: 769px) and (max-width: 1250px) {
-  .section-container{
-    padding: 0;
-  }
-} */
-
 .title-text {
   font-size: 3.5rem;
   font-weight: bold;
@@ -266,8 +255,51 @@ Between medium and large screens
     width: 50%;
   }
 }
+
 /* Home */
 
-/* Game 1 */
+/* Game Sections */
+.text-shadow-primary {
+  text-shadow: 2px 2px #c82d5e80;
+}
 
-/* Game 2 */
+.text-shadow-dark {
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.6);
+}
+
+/* On Small screens, hide play button above img 
+    and show it below */
+@media (max-width: 768px) {
+  .play-button-above {
+    display: none;
+  }
+
+  .play-button-below {
+    display: inline-block;
+  }
+}
+
+/* do the opposite */
+@media (min-width: 768px) {
+  .play-button-below {
+    display: none;
+  }
+
+  .play-button-above {
+    display: inline-block;
+  }
+}
+
+.doge-img {
+  width: 35%;
+  height: 96%;
+}
+
+/* game1.html */
+.game1-body {
+  /* Give gradient */
+  background: linear-gradient(to bottom, #051e3e 0%, #451e3e 100%);
+  background-attachment: fixed;
+}
+
+/* game2.html */
