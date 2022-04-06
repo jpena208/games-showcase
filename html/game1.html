@@ -20,8 +20,8 @@
     />
 
     <!-- Custom bootstrap scss and custom css styles -->
-    <link rel="stylesheet" href="css/custom.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="../css/custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
     <title>Asteroid Field | Unity Games by Jose Pena</title>
   </head>
@@ -39,7 +39,7 @@
     </div>
 
     <!-- Stuff under game -->
-    <div class="container mx-5 my-2">
+    <div class="container mx-5 my-2 text-center">
       <div class="d-flex flex-column flex-md-row justify-content-between">
         <span class="text-white">
           Refresh the page to play again after clicking quit.
@@ -47,9 +47,10 @@
         <span class="me-auto mx-3 fst-italic text-danger"
           >Not playable on mobile.</span
         >
-        <button href="index.html" type="button" class="back btn btn-primary">
-          Back
-        </button>
+        <!-- <script>
+          document.write('<a href="' + document.referrer + '">Go Back</a>');
+        </script> -->
+        <button id="go-back" type="button" class="btn btn-primary">Back</button>
       </div>
     </div>
 
