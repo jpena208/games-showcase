@@ -309,3 +309,8 @@ i:hover {
 }
 
 /* game2.html */
+.game2-body {
+  /* Give gradient */
+  background: linear-gradient(to bottom, #451e3e 0%, #851e3e 100%);
+  background-attachment: fixed;
+}
