@@ -167,10 +167,17 @@ i:hover {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 576px) {
+/* Bunch of media queries to get nav indicators as close to center as possible */
+@media screen and (max-width: 460px) {
   #fp-nav {
-    /* From extra small to small, keep close to center as possible */
-    right: 32%;
+    right: 20%;
+  }
+}
+
+@media screen and (min-width: 461px) and (max-width: 576px) {
+  #fp-nav {
+    /* From extra small to small*/
+    right: 29%;
   }
 
   #fp-nav ul {
@@ -180,14 +187,14 @@ i:hover {
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   #fp-nav {
-    /* From small to tablet , keep close to center as possible*/
-    right: 39%;
+    /* From small to tablet*/
+    right: 35%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1250px) {
   #fp-nav {
-    /* From tablet to large , keep close to center as possible*/
-    right: 43%;
+    /* From tablet to large*/
+    right: 39%;
   }
 }
 
