@@ -27,29 +27,32 @@
   </head>
 
   <body class="game1-body">
-    <!-- Asteroid Field game -->
-    <div id="AsteroidField" class="container-fluid my-5">
-      <div class="d-flex flex-column align-items-center">
-        <!-- Game 1 iframe -->
-        <iframe
-          src="https://i.simmer.io/@JPena208/asteroidfield"
-          style="width: 1000px; height: 563px"
-        ></iframe>
+    <div class="container">
+      <!-- Asteroid Field game -->
+      <div id="AsteroidField" class="container-fluid my-4">
+        <div class="d-flex flex-column align-items-center">
+          <!-- Game 1 iframe -->
+          <iframe
+            id="game1-iframe"
+            class="aspect-ratio-16-9"
+            src="https://i.simmer.io/@JPena208/asteroidfield"
+          ></iframe>
+        </div>
       </div>
-    </div>
 
-    <!-- Stuff under game -->
-    <div class="container mx-5 my-2 text-center">
-      <div class="d-flex flex-column flex-md-row justify-content-between">
-        <span class="text-white">
-          Refresh the page to play again after clicking quit.
-        </span>
-        <span class="me-auto mx-3 fst-italic text-danger"
-          >Not playable on mobile.</span
-        >
+      <!-- Stuff under game -->
+      <div class="w-75 mx-auto text-center">
+        <div class="d-flex flex-column flex-md-row justify-content-around">
+          <span class="text-white">
+            Refresh the page to play again after clicking quit.
+          </span>
+          <span class="me-auto mx-3 my-2 my-md-0 fst-italic text-danger"
+            >Not playable on mobile.</span
+          >
 
-        <!-- back button  -->
-        <a href="../index.html#game1" class="btn btn-primary">Back</a>
+          <!-- back button  -->
+          <a href="../index.html#game1" class="btn btn-primary">Back</a>
+        </div>
       </div>
     </div>
 

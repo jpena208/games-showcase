@@ -325,6 +325,13 @@ i:hover {
   }
 }
 
+.aspect-ratio-16-9 {
+  /* maintain aspect ratio 16:9 */
+  aspect-ratio: 16/9;
+  width: 80%;
+  flex-grow: 1;
+}
+
 /* game1.html */
 .game1-body {
   /* Give gradient */
@@ -337,6 +344,20 @@ i:hover {
   /* Give gradient */
   background: linear-gradient(to bottom, #451e3e 0%, #851e3e 100%);
   background-attachment: fixed;
+}
+
+.aspect-ratio-mobile {
+  /* maintain aspect ratio 16:9 */
+  aspect-ratio: 300/617;
+  width: 80%;
+  flex-grow: 1;
+}
+
+@media (min-width: 456px) {
+  .aspect-ratio-mobile {
+    width: 300px;
+    height: 617px;
+  }
 }
 
 /* game3.html */
